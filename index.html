@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evrion Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EVRION GAMING HUB</h1>
+    </header>
+
+    <main>
+        <h2 class="section-title">FEATURED MINI-GAME</h2>
+
+        <div class="game-viewport" id="gameArea">
+            <h2 id="activeGameTitle">Pulse Dodge</h2>
+            <p id="gameInstructions" class="instructions">Use LEFT/RIGHT arrows or TAP sides to dodge the expanding ring gap!</p>
+            
+            <div id="gameCanvasContainer" class="canvas-container">
+                <canvas id="gameCanvas" width="320" height="320"></canvas>
+            </div>
+
+            <div class="score-board" id="scoreDisplay" style="display: flex; gap: 1rem; align-items: center;">
+                <span>Score: <span id="currentScore">0</span></span>
+            </div>
+
+            <button class="btn share-btn" id="shareBtn">Share High Score</button>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
